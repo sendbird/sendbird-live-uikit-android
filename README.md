@@ -24,7 +24,7 @@ The minimum requirements for UiKit for Android are:
 * `Support androidx only`
 * `Android Gradle plugin 4.0.1 or higher`
 * `Sendbird Chat SDK for Android 4.0.3 and later`
-* `Sendbird Live SDK for Android 1.0.0-beta2 and later`
+* `Sendbird Live SDK for Android 1.0.0-beta3 and later`
 
 —
 
@@ -118,7 +118,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.sendbird.sdk:live-uikit:1.0.0-beta.1'
+    implementation 'com.sendbird.sdk:live-uikit:1.0.0-beta.2'
 }
 ```
 
@@ -145,12 +145,12 @@ Your users need to grant the client app the permission to access camera and micr
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
 
     <!--  To utilize audio in livestreaming event  -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera2.full" />
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
     <!--  To utilize video in livestreaming event for audio  -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
