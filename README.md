@@ -23,8 +23,8 @@ The minimum requirements for UiKit for Android are:
 * `Java 8 or higher`
 * `Support androidx only`
 * `Android Gradle plugin 4.0.1 or higher`
-* `Sendbird Chat SDK for Android 4.0.3 and later`
-* `Sendbird Live SDK for Android 1.0.0-beta3 and later`
+* `Sendbird Chat SDK for Android 4.1.1 and later`
+* `Sendbird Live SDK for Android 1.0.0-beta.4 and later`
 
 —
 
@@ -118,7 +118,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.sendbird.sdk:live-uikit:1.0.0-beta.2'
+    implementation 'com.sendbird.sdk:live-uikit:1.0.0-beta.3'
 }
 ```
 
